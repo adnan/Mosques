@@ -22,9 +22,9 @@ let initLoad = true;
 mapboxgl.accessToken = 'pk.eyJ1IjoiYWRuYW4iLCJhIjoiY2o4bzhycWN3MDBuMjM4cXU0dGVzbThiZyJ9.-Uh1YueCvZTFrN4T5TeyhQ';
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11',
-    center: [0, 40],
-    zoom: 6,
+    style: 'mapbox://styles/mapbox/dark-v10',
+    center: [51, -1],
+    zoom: 12,
     projection: 'globe',
     maxZoom: 24
 });
@@ -168,7 +168,7 @@ function addLayers(airports, nearest, route) {
             ],
             'circle-opacity': 1,
             'circle-blur': 0,
-            'circle-color': 'grey'
+            'circle-color': 'red'
         }
     });
 }
